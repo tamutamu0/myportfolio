@@ -1,17 +1,10 @@
-import Link from "next/link";
 import { ReactNode } from "react";
+import Header from "../components/Header"
 
 const Layout = ({ children }: Props) => {
     return (
         <div>
-            <nav className="flex flex-rows p-2 bg-red-500 text-white ">
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-                <Link href="/about">
-                    <a>About </a>
-                </Link>
-            </nav>
+            <Header/>
             {children}
         </div>
     );

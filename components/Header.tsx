@@ -21,7 +21,7 @@ const Header = () => {
                     <span className='font-semibold text-xl'>Yukinobu Tamura’s Portfolio</span>
                 </div>
                 <div>
-                    <ChangeThemeButton className="" />
+                    <ChangeThemeButton />
                 </div>
             </nav>
         </div>

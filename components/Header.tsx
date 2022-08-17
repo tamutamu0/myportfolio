@@ -2,6 +2,7 @@ import React from 'react'
 // import Link from "next/link";
 import { SiDatadog } from 'react-icons/si'
 import ChangeThemeButton from './ChangeThemeButton'
+import Mydog from '../public/mydog.jpeg'
 
 const Header = () => {
 
@@ -15,10 +16,11 @@ const Header = () => {
                     <a>About </a>
                 </Link>
             </nav> */}
-            <nav className='flex items-center justify-between bg-teal-500 p-6 dark:bg-dark-100'>
-                <div className='flex items-center mr-6 text-white'>
-                    <SiDatadog className='fill-current h-10 w-10 mr-3' />
-                    <span className='font-semibold text-xl'>Yukinobu Tamura’s Portfolio</span>
+            <nav className='flex items-center justify-between bg-teal-500 p-6'>
+                <div className='flex items-center mr-6 text-gray-900'>
+                    {/* <SiDatadog className='fill-current h-10 w-10 mr-3' /> */}
+                    <img src="/mydog.jpeg" alt="My Dog" className='object-cover h-10 w-10 rounded-full mr-3'/>
+                    <span className='font-semibold text-l'>Yukinobu Tamura’s Portfolio</span>
                 </div>
                 <div>
                     <ChangeThemeButton />
